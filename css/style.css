@@ -1,0 +1,726 @@
+/*Base elements styles*/
+
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+/*  line-height: 1.6;*/
+  margin: 0;
+  color: #3a3a3a;
+  font-size: 16px;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+h1 {
+  color: #384047;
+  margin-top:0;
+}
+
+h2 {
+  color: #565656;
+  margin-top: 0;
+}
+
+p {
+  margin: 0;
+  color: #3a3a3a;
+  font-size: 16px;
+}
+
+a {
+  text-decoration: none;
+  
+}
+
+
+/*====================
+BASE LAYOUT STYLES
+======================*/
+
+/*----Navigation----*/
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  
+}
+
+
+.main-header {
+  padding:2em 2em ;
+ 
+}
+
+.name{
+   color: #384047;
+   font-size: 2em;
+   padding:10px 15px 5px 15px ;
+   margin-bottom: 0;
+   letter-spacing: 5px;
+   font-weight: 500;
+ 
+}
+
+.job-title{
+  color: #a9a9a9;
+  font-size: 1.2em;
+  padding: 10px 15px 10px 15px;
+  margin-top: 0;
+  font-weight: 400;
+  letter-spacing: 1px;
+  line-height: 30px;
+}
+
+.name,
+.job-title,
+.main-nav a {
+  text-align: center;
+  display: block;
+}
+
+.main-nav a {
+  color: #a9a9a9;
+  font-size: 1.3em;
+  padding: 15px 10px;
+}
+
+.main-nav a:hover {
+  color: #151515;
+}
+
+/*---- Layout Containers ----*/
+
+
+.main-content {
+  padding: 2em 0 2em 0;
+  width: 90%;
+  margin: auto; 
+  flex: 1;
+
+}
+
+.flex-container {
+  height: 20em;
+}
+
+.vid-container {
+  margin: 5px;
+  height: 90%;
+  width: 95%;
+  margin: auto;
+  display: flex;
+  flex-flow: column;
+
+} 
+
+.pop-over {
+  padding:100px 50px;
+  overflow: hidden;
+}
+
+
+
+.film-title,
+.btn {
+  display: inline-block;
+  
+}
+
+
+.main-footer {
+  text-align:center;
+  background-color: #d9e4ea;
+  color: #fff;
+  margin-top: 2em;
+  padding:2em 0;
+}
+
+/*---- Styling ----*/
+
+.pop-over {
+  background-color:rgba(0, 0, 0, 0.3);
+/*  opacity: 0;*/
+  transition: 0s background-color;
+}
+
+.film-title,
+.btn {
+  color: #fff;
+  letter-spacing: 1px;
+  font-weight: 350;
+  display:inherit;
+/*  display: none;*/
+}
+
+.film-title {
+  margin-top: 30px;
+} 
+
+/* =================
+INDEX.HTML
+==================*/
+/*---- Portflio images -----*/
+
+.vid-container {
+  background-position: center; 
+  background-repeat: no-repeat; 
+  background-size: cover;
+  background-color: #eee;
+}
+
+.peter-evans {
+  background-image: url(../img/peter-evans-preview.jpg);
+ 
+}
+
+
+.dosa {
+  background-image: url(../img/dosa-preview.jpg);
+ 
+}
+
+
+.noise {
+  background-image: url(../img/noise-preview.jpg);
+ 
+}
+
+.adumunye {
+  background-image: url(../img/adumunye-preview.jpg);
+ 
+}
+
+.robert {
+  background-image: url(../img/robert-preview.jpg);
+  
+}
+
+.plastic-blanket {
+  background-image: url(../img/plastic-blanket-preview.jpg);
+}
+
+
+
+/*--- Portfolio containers ---*/
+
+.main-content-portfolio {
+  width: 85%;
+  margin: auto;
+  border-top: solid 1px #151515;  
+}
+
+.header-portfolio {
+  margin-bottom: 3em ;
+}
+
+
+.title-portfolio {
+/*  text-align:center;*/
+  font-size: 1.75em;
+  letter-spacing: 2px;
+  font-weight: 400;
+  margin:1em 0 ;
+}
+
+.info-portfolio {
+  font-size: 1em;
+  font-weight: 400;
+}
+
+.portfolio-vid-containter {
+  width: 95%;
+  margin:auto;
+}
+
+/* =================
+ABOUT.HTML
+==================*/
+
+.about-wrapper {
+  width: 90%;
+  margin: auto;
+}
+
+.para {
+  padding: 2em;
+  margin: auto;
+/*  border: solid 1px red;*/
+  line-height: 1.6em;
+  color: #384047;
+ 
+  
+}
+
+.about-portrait {
+  display: block;
+  border-radius: 50%;
+  margin: auto;
+/*  border: solid 1px red;*/
+  
+}
+
+/* =================
+CONTACT.HTML
+==================*/
+
+.contact-wrapper {
+  display: flex;
+  flex-direction:column;
+  width: 90%;
+  margin: auto;
+  
+}
+
+/*
+.contact-flex,
+.contact-wrapper,
+.contact-wrapper,
+.button,
+.contact-cta,
+.form{
+  border:solid red 1px ;
+  justify-content:space-around;
+}
+*/
+
+.contact-heading {
+  color: #384047;
+  letter-spacing: 1px;
+  font-size: 1.6em;
+  letter-spacing: 3px;
+  font-weight: 400;
+  text-align:center;
+}
+
+
+
+
+.contact-para {
+/*  padding: 1.3em 2em 2em 2em;*/
+  padding: 1.3em 2em 2em 2em;
+  line-height: 1.6em;
+  margin: auto;
+  color: #384047;
+}
+
+.form {
+  padding: 2em;
+}
+
+
+/*---Form ---*/
+
+
+label{
+  font-size: 1.1em;
+  color: #384047;
+  letter-spacing: 0.5px;
+  font-weight: 400;
+  display: block;
+  margin-bottom: 10px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  font-size: 1em;
+  box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+  width: 100%;
+  outline: 0;
+  border: 0;
+  padding: 20px;
+  margin-bottom: 30px;
+}
+
+textarea {
+  height: 100px; 
+   outline: 0;
+}
+
+.form-filler {
+  background-color: #D8D8D8;
+  padding: 1.5em;
+  border-radius: 8px;
+  margin-top: 0;
+  display: flex;
+  flex-direction:column;
+}
+
+
+
+.contact-cta,
+.form-filler {
+  flex: 1;
+}
+
+.button {
+  display: block;
+  padding: 19px 39px 18px 39px;
+  width: 100%;
+  font-size: 18px;
+  text-align: center;
+  border: 1px solid #749559;
+  margin-bottom: 10px;
+  background-color: #749559;
+  border-radius: 5px;
+  font-size: 1.2em;
+  color: #384047;
+  letter-spacing: 1px;
+  letter-spacing: 3px;
+  font-weight: 400;
+}
+
+
+/*--- Exsternal link specific START ---*/
+
+.external-link:visited {
+  color: #3a3a3a;
+}
+
+.external-link:hover {
+  border-bottom: 2px solid #3a3a3a;
+}
+
+
+/*--- Exsternal link specific END ---*/
+
+/* =================
+Media Queries
+==================*/
+
+@media (min-width: 769px) {
+
+.main-header,
+.main-nav{
+  display: flex;
+}
+
+.main-header{
+  flex-direction:column;
+  align-items: center;
+}
+
+.job-title {
+  margin-bottom:0;
+  padding-bottom: 0;
+  padding-top: 5px;
+  
+}
+
+.main-nav {
+  font-size: 0.9em;
+}
+
+.hover:hover {
+  border-bottom: 1px solid #151515;
+ 
+}
+
+.main-content, {
+  padding-top: 2em;
+  margin:0 2em ;
+}
+
+ 
+.flex-container {
+  width: 50%;
+  height: 14em;
+}
+
+
+.right{
+  float: right;
+}
+
+.main-content-portfolio {
+  border-top: none;  
+}
+
+.portfolio-vid-containter {
+  width:auto; 
+}
+
+
+/*---769px portfolio hover ---*/
+
+
+
+  
+  .film-title {
+  margin-top: 0;
+} 
+
+.film-title, 
+.btn {
+  font-weight: 300;
+}
+  
+.vid-container:hover .btn,
+.vid-container:hover .film-title {
+    display:inherit;
+}
+
+.pop-over {
+  background-color:rgba(0, 0, 0, 0.7);
+  opacity: 0;
+  transition: 0s background-color;
+  
+}
+
+.pop-over:hover {
+  opacity: 0.8;
+  transition-delay: background-color 2s;
+}
+
+.vid-container:hover .btn,
+.vid-container:hover .film-title {
+    opacity: 1;
+}
+  
+
+
+/* =================
+CONTACT MIN-WIDTH: 769px
+==================*/
+
+
+.contact-heading {
+  text-align: left;
+  padding-left: 1.3em;
+}
+
+.form-filler {
+  width: 70%;
+  margin: auto;
+  margin-top: 40px;
+}
+
+  
+
+}
+
+
+
+
+@media (min-width: 1025px) {
+
+.main-header {
+  flex-direction: row;
+  justify-content: space-between;
+  padding:2em 4em ;
+ 
+}
+
+
+.title-objects {
+  padding-top:1.5em ;
+  flex-wrap:wrap;
+  display: flex;
+  flex-direction:column;
+  justify-content:center;
+}
+
+.name {
+  font-size: 2.3em ;
+  letter-spacing: 7px;
+/*  font-weight: 525;*/
+
+}
+
+.job-title {
+  letter-spacing: 1px;
+  font-weight: 400;
+  font-size: 1.1em;
+}
+
+
+.name,
+.job-title {
+  display: flex;
+  justify-content:flex-start;
+  line-height: inherit;
+}
+
+.main-nav {
+  font-size: 0.8em;
+  letter-spacing: 3px;
+  margin-top: 0;
+}
+
+
+
+
+.main-content {
+  margin:0 4em ;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.flex-container {
+  width: 33.33%;
+}
+
+
+.main-content-portfolio {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.header-portfolio {
+  width: 40%;
+}
+
+.title-portfolio {
+  margin-top: 0;
+  font-size: 2em;
+}
+
+.info-portfolio {
+  margin: 8px 0px; 
+}
+
+.director {
+  margin-bottom: 1.8em;
+}
+
+.runtime {
+  margin-top: 1.8em;
+}
+
+.bio {
+  margin-bottom: 1.8em;
+  padding-right: 4em;
+}
+
+.portfolio-vid-containter {
+  width: 60%;
+  overflow: hidden;
+  
+}
+
+/*
+.about-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.about-para {
+  flex: 2;
+}
+
+.about-portrait {
+  flex:1 ;
+}
+*/
+
+.about-wrapper {
+  width: 85%;
+}
+
+.about-portrait {
+  float: left;
+  padding-top: 2.5em;
+  
+}
+
+.about-para {
+ width: 60%;
+ float: right;
+ line-height: 2em;
+ margin: auto;
+}
+
+.footer {
+  margin: 0;
+}
+
+/* =================
+ABOUT MIN-WIDTH: 1025px
+==================*/
+
+.about-para {
+  padding-top: 20px;
+}
+
+.about-para-one {
+  padding-top: 0;
+}
+
+/* =================
+CONTACT MIN-WIDTH: 1025px
+==================*/
+
+.contact-wrapper {
+  flex-direction: row;
+  justify-content: space-between;
+/*
+  margin: 0;
+*/
+}
+
+/*
+.contact-cta {
+  flex: 2;
+}
+*/
+
+.contact-heading {
+  margin-top: 0;
+  padding-top: 75px;
+}
+
+.form-filler {
+  margin-top: 0;
+  flex: 1;
+  margin-left: 100px;
+}
+
+.form-flex {
+  display:flex;
+  flex-direction: row;
+  justify-content:space-between;
+}
+
+
+.form-flex-container {
+  width: 47%;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  padding: 10px;
+  margin-bottom: 20px;
+
+
+}
+
+@media (min-width: 1660px) {
+
+.flex-container {
+  height:auto ;
+  max-height: 18em;
+} 
+
+}
+
+/*----Clearfix----*/
+
+.clearfix::after {
+		content: "";
+		display: table;
+		clear: both;
+	}
+
+
+
+
+
+
